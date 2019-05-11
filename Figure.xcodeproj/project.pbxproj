@@ -104,6 +104,7 @@
 		C460A4F4228789B1009B5362 /* FigureSerializable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FigureSerializable.h; sourceTree = "<group>"; };
 		C460A4F5228789B1009B5362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C460A50122878A00009B5362 /* Figure.Serializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Figure.Serializable.swift; sourceTree = "<group>"; };
+		C460A503228791BF009B5362 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +146,7 @@
 		C460A49222878326009B5362 = {
 			isa = PBXGroup;
 			children = (
+				C460A503228791BF009B5362 /* README.md */,
 				C460A4AC2287833D009B5362 /* ExampleiOS */,
 				C460A49E22878326009B5362 /* Figure */,
 				C460A4D52287851C009B5362 /* FigureiOS */,
