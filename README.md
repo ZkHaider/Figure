@@ -1,7 +1,6 @@
 
 
 #  Figure
-by Haider Khan
 
 **Figure** is a elegant declarative UI library, utilizing the [Final Tagless](http://okmij.org/ftp/tagless-final/index.html) solution to the [expression problem](https://www.dotconferences.com/2018/01/brandon-kase-finally-solving-the-expression-problem).
 
@@ -10,6 +9,12 @@ by Haider Khan
 ### Carthage 
 
 Add `github "ZkHaider/Figure" "master"` to your Cartfile, and run Carthage. 
+
+### Requirements
+
+- Deployment target iOS 10.0+
+- Swift 4+
+- Xcode 10+
 
 ## Usage 
 
@@ -87,3 +92,17 @@ let view: UIView = myNestedView.render()
 ```
 
 The above will create a root view with 1 subviews which itself should have 3 subviews.
+
+## Contributions
+
+`Figure` welcomes both fixes, improvements, and feature additions. If you'd like to contribute, open a pull request with a detailed description of your changes. 
+
+As a rule of thumb, if you're proposing an API breaking change or a change to existing functionality, consider proposing it by opening an issue, rather than a pull request; we'll use the issue as a public forum for discussing whether the proposal makes sense or not.
+
+## Maintainers
+
+Haider Khan
+- https://github.com/ZkHaider
+
+Timothy Kautz
+- https://github.com/littleowl
