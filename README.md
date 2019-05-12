@@ -1,7 +1,7 @@
 
 
 #  Figure
-### by Haider Khan
+by Haider Khan
 
 **Figure** is a elegant declarative UI library, utilizing the [Final Tagless](http://okmij.org/ftp/tagless-final/index.html) solution to the [expression problem](https://www.dotconferences.com/2018/01/brandon-kase-finally-solving-the-expression-problem).
 
