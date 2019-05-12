@@ -17,7 +17,7 @@ public struct iOSRenderer {
     public let config: [ViewConfig]
     public let layout: [LayoutConfig]
     public let children: [iOSRenderer]
-    public let render: Render
+    internal let render: Render
     
     fileprivate init(config: [ViewConfig],
                      layout: [LayoutConfig],
