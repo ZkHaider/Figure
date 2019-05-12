@@ -148,7 +148,7 @@ guard
 
 Notice I am importing a new module `FigureSerializable`. Here is the rendered JSON:
 
-<img src="https://github.com/ZkHaider/Figure/blob/master/Resources/view_json.png"  width="300" />
+<img src="https://github.com/ZkHaider/Figure/blob/master/Resources/view_json.png"  width="400" />
 
 ## Archiecture
 
