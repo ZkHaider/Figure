@@ -40,8 +40,7 @@ final class ViewController: UIViewController {
     // MARK: - View 
 
     var rootView: iOSRenderer {
-        return .view(config: [],
-                     layout: [])
+        return .view()
     }
     
     // MARK: - Init
@@ -67,8 +66,7 @@ final class ViewController: RenderViewController {
     // MARK: - View 
 
     override var rootView: iOSRenderer {
-        return .view(config: [],
-                     layout: [])
+        return .view()
     }
     
 }
@@ -77,21 +75,19 @@ Declare view hierarchies like so:
 
 ```swift 
 let myNestedView: iOSRenderer = .view(
-    config: [],
-    layout: [.fill],
+    config: [.backgroundColor(.red)],
     .view(
-        config: [],
         layout: [.set(width: 100.0, height: 100.0)],
-        .view(config: [], layout: []),
-        .view(config: [], layout: []),
-        .view(layout: [], config: [])
+        .view(layout: [.fill]),
+        .view(),
+        .view()
     )
 )
 
 let view: UIView = myNestedView.render()
 ```
 
-The above will create a root view with 1 subview which itself should have 3 subviews.
+The above will create a root view which has a red background with 1 subview which has a width of 100.0 and a height of 100.0 which itself should have 3 subviews where 1 of those subviews fills the frame of it's parent view. 
 
 ## Contributions
 
