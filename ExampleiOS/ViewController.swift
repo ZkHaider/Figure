@@ -15,8 +15,15 @@ class ViewController: RenderViewController {
     // MARK: - View
     
     override var rootView: iOSRenderer {
-        return .view(config: [.backgroundColor(.red)],
-                     layout: [.fill])
+        return .view(
+            config: [.backgroundColor(.red)],
+            .view(
+                layout: [.set(width: 100.0, height: 100.0)],
+                .view(layout: [.fill]),
+                .view(),
+                .view()
+            )
+        )
     }
     
     // MARK: - Init
