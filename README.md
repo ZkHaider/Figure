@@ -89,6 +89,8 @@ let view: UIView = myNestedView.render()
 
 The above will create a root view which has a red background with 1 subview which has a width of 100.0 and a height of 100.0 which itself should have 3 subviews where 1 of those subviews fills the frame of it's parent view. 
 
+<img src="https://raw.githubusercontent.com/ZkHaider/Figure/master/Resources/view_hierarchy.png?sanitize=true&raw=true" />
+
 ## Composability 
 
 This library adheres to be as composable as possible, meaning it should be easy for someone to:
