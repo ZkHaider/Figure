@@ -27,7 +27,7 @@ let view: iOSRenderer = .view()
 You can then render that view like so:
 
 ```swift 
-let renderedView: UIView = view.render()
+let renderedView: UIView = view.describe.view
 ```
 
 You can simply create a `var` in your `UIViewController` as your root view, like so:
@@ -50,7 +50,7 @@ final class ViewController: UIViewController {
     // MARK: - Lifecycle 
     
     override func loadView() {
-        self.view = self.rootView.render()
+        self.view = self.rootView.describe.view
     }
 
 }
@@ -84,7 +84,7 @@ let myNestedView: iOSRenderer = .view(
     )
 )
 
-let view: UIView = myNestedView.render()
+let view: UIView = myNestedView.describe.view
 ```
 
 The above will create a root view which has a red background with 1 subview which has a width of 100.0 and a height of 100.0 which itself should have 3 subviews where 1 of those subviews fills the frame of it's parent view. 
