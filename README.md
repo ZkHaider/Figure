@@ -111,7 +111,7 @@ Notice I am importing a new module `FigureSerializable`.
 
 ## Archiecture
 
-<img src="https://raw.githubusercontent.com/ZkHaider/Figure/blob/master/Resources/figure_architecture.png" />
+<img src="https://github.com/ZkHaider/Figure/blob/master/Resources/figure_architecture.png" />
 
 ## Contributions
 
