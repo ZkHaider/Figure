@@ -56,7 +56,7 @@ final class ViewController: UIViewController {
 }
 ```
 
-Notice we declaratively create the view in `rootView` and then render it by calling `render()` in `loadView()`. Alternatively you can subclass your `UIViewController` with `RenderViewController` and override the `rootView` property. `RenderViewController` handles your view rendering automatically, so even less boilerplate to write. 
+Notice we declaratively create the view in `rootView` and then render it by calling `rootView.describe.view` in `loadView()`. Alternatively you can subclass your `UIViewController` with `RenderViewController` and override the `rootView` property. `RenderViewController` handles your view rendering automatically, so even less boilerplate to write. 
 
 ```swift 
 import FigureiOS
