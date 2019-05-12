@@ -89,6 +89,24 @@ let view: UIView = myNestedView.render()
 
 The above will create a root view which has a red background with 1 subview which has a width of 100.0 and a height of 100.0 which itself should have 3 subviews where 1 of those subviews fills the frame of it's parent view. 
 
+## Composability 
+
+This library adheres to be as composable as possible, meaning it should be easy for someone to:
+
+- Add a new type
+- Add a new interpretation or operation
+
+This example is shown by the `FigureSerializable` module. We've implemented a new target and added new functionality to our `ViewDescriptor`. If someone wanted to now make our view hierarchy codable you can easily do so now via: 
+
+```swift
+import FigureSerializable
+
+let view: iOSRenderer = .view()
+let json: String = view.describe.json
+```
+
+Notice I am importing a new module `FigureSerializable`.
+
 ## Contributions
 
 `Figure` welcomes both fixes, improvements, and feature additions. If you'd like to contribute, open a pull request with a detailed description of your changes. 
