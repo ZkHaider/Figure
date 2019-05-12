@@ -91,7 +91,7 @@ let myNestedView: iOSRenderer = .view(
 let view: UIView = myNestedView.render()
 ```
 
-The above will create a root view with 1 subviews which itself should have 3 subviews.
+The above will create a root view with 1 subview which itself should have 3 subviews.
 
 ## Contributions
 
