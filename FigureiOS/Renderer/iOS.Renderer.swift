@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import Figure
 
-public struct iOSRenderer {
+public struct iOSRenderer {    
     
     public typealias Render = () -> (UIView)
     
@@ -18,11 +18,14 @@ public struct iOSRenderer {
     public let layout: [LayoutConfig]
     public let children: [iOSRenderer]
     internal let render: Render
+    internal let viewType: iOSViews
     
-    fileprivate init(config: [ViewConfig],
+    fileprivate init(viewType: iOSViews,
+                     config: [ViewConfig],
                      layout: [LayoutConfig],
                      children: [iOSRenderer],
                      render: @escaping Render) {
+        self.viewType = viewType
         self.config = config
         self.layout = layout
         self.children = children
@@ -32,6 +35,7 @@ public struct iOSRenderer {
 }
 
 extension iOSRenderer: ViewComponent {
+    
     public static func view(config: [ViewConfig] = [],
                             layout: [LayoutConfig] = [],
                             _ children: iOSRenderer...) -> iOSRenderer {
@@ -42,10 +46,13 @@ extension iOSRenderer: ViewComponent {
                 .forEach(view.addSubview)
             return view
         }
-        return iOSRenderer(config: config,
-                        layout: layout,
-                        children: children,
-                        render: render)
+        return iOSRenderer(
+            viewType: .view,
+            config: config,
+            layout: layout,
+            children: children,
+            render: render
+        )
     }
 }
 
@@ -61,7 +68,8 @@ extension iOSRenderer: iOSViewComponents {
                 .forEach(view.addSubview)
             return view
         }
-        return iOSRenderer(config: config,
+        return iOSRenderer(viewType: .custom(type),
+                           config: config,
                            layout: layout,
                            children: children,
                            render: render)

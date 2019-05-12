@@ -18,6 +18,10 @@ class ViewController: RenderViewController {
         return .view(
             of: MyCustomView.self,
             .view(
+                layout: [
+                    .fill,
+                    .frame(origin: .zero, size: .zero)
+                ],
                 .view(),
                 .view(
                     of: MyCustomView.self,
@@ -39,7 +43,9 @@ class ViewController: RenderViewController {
         super.viewDidLoad()
         
         // Transform to JSON
-        let viewJSON: String = self.rootView.describe.json
+        guard
+            let viewJSON = self.rootView.describe.json
+            else { return }
         print(viewJSON)
     }
 

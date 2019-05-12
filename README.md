@@ -140,10 +140,15 @@ This example is shown by the `FigureSerializable` module. We've implemented a ne
 import FigureSerializable
 
 let view: iOSRenderer = .view()
-let json: String = view.describe.json
+guard 
+    let json = view.describe.json
+    else { return }
+// use json...
 ```
 
-Notice I am importing a new module `FigureSerializable`.
+Notice I am importing a new module `FigureSerializable`. Here is the rendered JSON:
+
+<img src="https://github.com/ZkHaider/Figure/blob/master/Resources/view_json.png" />
 
 ## Archiecture
 

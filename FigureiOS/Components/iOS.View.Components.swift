@@ -9,7 +9,7 @@
 import Foundation
 import Figure
 
-public protocol iOSViewComponents {
+public protocol iOSViewComponents: ViewComponent {
     static func view(of type: UIView.Type,
                      config: [ViewConfig],
                      layout: [LayoutConfig],
