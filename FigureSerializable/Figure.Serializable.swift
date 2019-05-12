@@ -10,14 +10,21 @@ import Foundation
 import Figure
 
 public protocol Serializable {
-    var json: String { get }
+    var json: String? { get }
 }
 
-extension ViewDescriptor: Serializable {
+extension ViewDescriptor: Serializable where Component: Codable {
     
-    public var json: String {
-        return ""
+    public var json: String? {
+        let jsonEncoder = JSONEncoder()
+        let base = self.base
+        guard
+            let data = try? jsonEncoder.encode(base),
+            let jsonString = String(data: data, encoding: .utf8)
+            else {
+                return nil
+        }
+        return jsonString
     }
     
 }
-

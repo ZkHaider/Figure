@@ -33,6 +33,10 @@
 		C460A50622879914009B5362 /* Render.ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A50522879914009B5362 /* Render.ViewController.swift */; };
 		C460A5092287AE83009B5362 /* iOS.View.Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A5082287AE83009B5362 /* iOS.View.Components.swift */; };
 		C4B61F4C2288DFAA00AD3A79 /* view.json in Resources */ = {isa = PBXBuildFile; fileRef = C4B61F4B2288DFAA00AD3A79 /* view.json */; };
+		C460A5132288B5E4009B5362 /* View.Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A5122288B5E4009B5362 /* View.Types.swift */; };
+		C460A5152288D169009B5362 /* iOS.Renderer.Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A5142288D169009B5362 /* iOS.Renderer.Codable.swift */; };
+		C460A5192288D6E0009B5362 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A5172288D697009B5362 /* Color.swift */; };
+		C460A51C2288D768009B5362 /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A51B2288D768009B5362 /* Aliases.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +115,10 @@
 		C460A50522879914009B5362 /* Render.ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Render.ViewController.swift; sourceTree = "<group>"; };
 		C460A5082287AE83009B5362 /* iOS.View.Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS.View.Components.swift; sourceTree = "<group>"; };
 		C4B61F4B2288DFAA00AD3A79 /* view.json */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = text.json; path = view.json; sourceTree = "<group>"; tabWidth = 4; };
+		C460A5122288B5E4009B5362 /* View.Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.Types.swift; sourceTree = "<group>"; };
+		C460A5142288D169009B5362 /* iOS.Renderer.Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS.Renderer.Codable.swift; sourceTree = "<group>"; };
+		C460A5172288D697009B5362 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		C460A51B2288D768009B5362 /* Aliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aliases.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +186,8 @@
 			children = (
 				C460A4A022878326009B5362 /* Info.plist */,
 				C460A49F22878326009B5362 /* Figure.h */,
+				C460A51A2288D75F009B5362 /* CrossPlatform */,
+				C460A5162288D668009B5362 /* Values */,
 				C460A4CC228784B8009B5362 /* Descriptor */,
 				C460A4C322878430009B5362 /* Layout */,
 				C460A4BD2287839F009B5362 /* Component */,
@@ -266,6 +276,7 @@
 			children = (
 				C460A4E622878581009B5362 /* iOS.Renderer.swift */,
 				C460A4E9228788B4009B5362 /* iOS.Renderable.swift */,
+				C460A5142288D169009B5362 /* iOS.Renderer.Codable.swift */,
 			);
 			path = Renderer;
 			sourceTree = "<group>";
@@ -292,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				C460A50522879914009B5362 /* Render.ViewController.swift */,
+				C460A5122288B5E4009B5362 /* View.Types.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -302,6 +314,22 @@
 				C460A5082287AE83009B5362 /* iOS.View.Components.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		C460A5162288D668009B5362 /* Values */ = {
+			isa = PBXGroup;
+			children = (
+				C460A5172288D697009B5362 /* Color.swift */,
+			);
+			path = Values;
+			sourceTree = "<group>";
+		};
+		C460A51A2288D75F009B5362 /* CrossPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				C460A51B2288D768009B5362 /* Aliases.swift */,
+			);
+			path = CrossPlatform;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -499,6 +527,8 @@
 			files = (
 				C460A4C722878447009B5362 /* Layout.Info.swift in Sources */,
 				C460A4BF228783B2009B5362 /* View.Component.swift in Sources */,
+				C460A51C2288D768009B5362 /* Aliases.swift in Sources */,
+				C460A5192288D6E0009B5362 /* Color.swift in Sources */,
 				C460A4CE228784C3009B5362 /* View.Descriptor.swift in Sources */,
 				C460A4CB22878489009B5362 /* View.Layout.swift in Sources */,
 				C460A4C2228783D8009B5362 /* View.Config.swift in Sources */,
@@ -520,8 +550,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C460A4EA228788B4009B5362 /* iOS.Renderable.swift in Sources */,
+				C460A5152288D169009B5362 /* iOS.Renderer.Codable.swift in Sources */,
 				C460A4E722878581009B5362 /* iOS.Renderer.swift in Sources */,
 				C460A5092287AE83009B5362 /* iOS.View.Components.swift in Sources */,
+				C460A5132288B5E4009B5362 /* View.Types.swift in Sources */,
 				C460A4EC2287893E009B5362 /* iOS.Descriptor.swift in Sources */,
 				C460A50622879914009B5362 /* Render.ViewController.swift in Sources */,
 			);

@@ -16,7 +16,7 @@ public enum LayoutConfig: LayoutInfo {
     case height(CGFloat)
     case width(CGFloat)
     case set(width: CGFloat, height: CGFloat)
-    case set(origin: CGPoint, size: CGSize)
+    case frame(origin: CGPoint, size: CGSize)
     
     // FIX.
     public var frame: CGRect { return .zero }
