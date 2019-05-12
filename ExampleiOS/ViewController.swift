@@ -10,11 +10,11 @@ import UIKit
 import FigureiOS
 import FigureSerializable
 
-class ViewController: UIViewController {
+class ViewController: RenderViewController {
     
     // MARK: - View
     
-    var rootView: iOSRenderer {
+    override var rootView: iOSRenderer {
         return .view(config: [.backgroundColor(.red)],
                      layout: [.fill])
     }
@@ -22,19 +22,10 @@ class ViewController: UIViewController {
     // MARK: - Init
     
     required init() {
-        super.init(nibName: nil, bundle: nil)
+        super.init()
     }
     
-    @available(*, unavailable)
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    // MARK: - Lifecycle
-    
-    override func loadView() {
-        self.view = self.rootView.render()
-    }
+    // MARK: - Lifecycle 
 
     override func viewDidLoad() {
         super.viewDidLoad()

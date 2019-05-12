@@ -30,6 +30,7 @@
 		C460A4FA228789B1009B5362 /* FigureSerializable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C460A4F2228789B1009B5362 /* FigureSerializable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C460A4FE228789E7009B5362 /* Figure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C460A49C22878326009B5362 /* Figure.framework */; };
 		C460A50222878A00009B5362 /* Figure.Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A50122878A00009B5362 /* Figure.Serializable.swift */; };
+		C460A50622879914009B5362 /* Render.ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A50522879914009B5362 /* Render.ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		C460A4F5228789B1009B5362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C460A50122878A00009B5362 /* Figure.Serializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Figure.Serializable.swift; sourceTree = "<group>"; };
 		C460A503228791BF009B5362 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C460A50522879914009B5362 /* Render.ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Render.ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 				C460A4D62287851C009B5362 /* FigureiOS.h */,
 				C460A4E822878663009B5362 /* Descriptor */,
 				C460A4E522878570009B5362 /* Renderer */,
+				C460A504228798FE009B5362 /* Views */,
 			);
 			path = FigureiOS;
 			sourceTree = "<group>";
@@ -277,6 +280,14 @@
 				C460A50122878A00009B5362 /* Figure.Serializable.swift */,
 			);
 			path = FigureSerializable;
+			sourceTree = "<group>";
+		};
+		C460A504228798FE009B5362 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C460A50522879914009B5362 /* Render.ViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,6 +507,7 @@
 				C460A4EA228788B4009B5362 /* iOS.Renderable.swift in Sources */,
 				C460A4E722878581009B5362 /* iOS.Renderer.swift in Sources */,
 				C460A4EC2287893E009B5362 /* iOS.Descriptor.swift in Sources */,
+				C460A50622879914009B5362 /* Render.ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
