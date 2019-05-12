@@ -1,0 +1,48 @@
+{
+    "type": "ExampleiOS.MyCustomView",
+    "children": [
+        {
+            "type": "view",
+            "layout": [
+                {
+                    "type": "fill"
+                },
+                {
+                    "type": "frame",
+                    "value": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            0,
+                            0
+                        ]
+                    ]
+                }
+            ],
+            "children": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "ExampleiOS.MyCustomView",
+                    "configs": [
+                        {
+                            "type": "backgroundColor",
+                            "value": {
+                                "red": 1,
+                                "alpha": 1,
+                                "blue": 0,
+                                "green": 0
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+
+

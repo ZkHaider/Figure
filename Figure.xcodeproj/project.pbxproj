@@ -32,6 +32,7 @@
 		C460A50222878A00009B5362 /* Figure.Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A50122878A00009B5362 /* Figure.Serializable.swift */; };
 		C460A50622879914009B5362 /* Render.ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A50522879914009B5362 /* Render.ViewController.swift */; };
 		C460A5092287AE83009B5362 /* iOS.View.Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A5082287AE83009B5362 /* iOS.View.Components.swift */; };
+		C4B61F4C2288DFAA00AD3A79 /* view.json in Resources */ = {isa = PBXBuildFile; fileRef = C4B61F4B2288DFAA00AD3A79 /* view.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		C460A503228791BF009B5362 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C460A50522879914009B5362 /* Render.ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Render.ViewController.swift; sourceTree = "<group>"; };
 		C460A5082287AE83009B5362 /* iOS.View.Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS.View.Components.swift; sourceTree = "<group>"; };
+		C4B61F4B2288DFAA00AD3A79 /* view.json */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = text.json; path = view.json; sourceTree = "<group>"; tabWidth = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 		C460A4AC2287833D009B5362 /* ExampleiOS */ = {
 			isa = PBXGroup;
 			children = (
+				C4B61F4B2288DFAA00AD3A79 /* view.json */,
 				C460A4AD2287833D009B5362 /* AppDelegate.swift */,
 				C460A4AF2287833D009B5362 /* ViewController.swift */,
 				C460A4B42287833E009B5362 /* Assets.xcassets */,
@@ -468,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C460A4B82287833E009B5362 /* LaunchScreen.storyboard in Resources */,
+				C4B61F4C2288DFAA00AD3A79 /* view.json in Resources */,
 				C460A4B52287833E009B5362 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
