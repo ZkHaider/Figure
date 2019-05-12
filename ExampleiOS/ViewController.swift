@@ -15,40 +15,22 @@ class ViewController: RenderViewController {
     // MARK: - View
     
     override var rootView: iOSRenderer {
-        return .view(config: [.backgroundColor(.red)],
-                     layout: [.fill])
+        return .view(
+            of: MyCustomView.self,
+            .view(
+                .view(),
+                .view(
+                    of: MyCustomView.self,
+                    config: [.backgroundColor(.red)]
+                )
+            )
+        )
     }
     
     // MARK: - Init
     
     required init() {
         super.init()
-        
-        
-        
-        
-        let view: iOSRenderer = .view()
-        
-        let nestedViews: iOSRenderer = .view(
-            .view(of: CustomView.self),
-            .view(
-                .view(config: [.backgroundColor(.yellow)],
-                      layout: [.fill]),
-                .view()
-            )
-        )
-        
-        let _view: UIView = view.describe.view
-        let _nestedViews = nestedViews.describe.view
-        let viewJSON: String = view.describe.json
-        let nestedViewsJSON: String = nestedViews.describe.json
-        
-        
-        
-        print(_view)
-        print(_nestedViews)
-        print(viewJSON)
-        print(nestedViewsJSON)
     }
     
     // MARK: - Lifecycle 
@@ -70,7 +52,4 @@ extension ViewController {
     }
 }
 
-final class CustomView: UIView {
-    
-    
-}
+final class MyCustomView: UIView {}

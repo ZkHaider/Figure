@@ -18,6 +18,8 @@ Add `github "ZkHaider/Figure" "master"` to your Cartfile, and run Carthage.
 
 ## Usage 
 
+#### Simple View Creation
+
 A view is declared simply by:
 
 ```swift 
@@ -71,6 +73,9 @@ final class ViewController: RenderViewController {
     
 }
 ```
+
+#### Nested View Creation
+
 Declare view hierarchies like so:
 
 ```swift 
@@ -90,6 +95,35 @@ let view: UIView = myNestedView.describe.view
 The above will create a root view which has a red background with 1 subview which has a width of 100.0 and a height of 100.0 which itself should have 3 subviews where 1 of those subviews fills the frame of it's parent view. 
 
 <img src="https://github.com/ZkHaider/Figure/blob/master/Resources/view_hierarchy.png" />
+
+#### Use your own Custom Views
+
+Figure allows you to use your custom views in case you want more flexibility. Simply use them by:
+
+```swift 
+import FigureiOS
+
+final class MyCustomView: UIView {}
+
+let myCustomView: iOSRenderer = .view(of: MyCustomView.self)
+
+let _myCustomView: UIView = myCustomView.describe.view
+
+let myCustomNestedView: iOSRenderer = .view(
+    of: MyCustomView.self,
+    .view(
+        .view(),
+        .view(
+            of: MyCustomView.self,
+            config: [.backgroundColor(.red)]
+        )
+    )
+)
+
+let _myCustomNestedView: UIView = myCustomNestedView.describe.view
+```
+
+<img src="https://github.com/ZkHaider/Figure/blob/master/Resources/custom_view_hierarchy.png" />
 
 ## Composability 
 
