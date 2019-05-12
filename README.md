@@ -146,7 +146,7 @@ guard
 // use json...
 ```
 
-Notice I am importing a new module `FigureSerializable`. Here is the rendered JSON:
+Notice we are importing a new module `FigureSerializable`. Here is the rendered JSON:
 
 <img src="https://github.com/ZkHaider/Figure/blob/master/Resources/view_json.png"  width="400" />
 
