@@ -31,6 +31,7 @@
 		C460A4FE228789E7009B5362 /* Figure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C460A49C22878326009B5362 /* Figure.framework */; };
 		C460A50222878A00009B5362 /* Figure.Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A50122878A00009B5362 /* Figure.Serializable.swift */; };
 		C460A50622879914009B5362 /* Render.ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A50522879914009B5362 /* Render.ViewController.swift */; };
+		C460A5092287AE83009B5362 /* iOS.View.Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A5082287AE83009B5362 /* iOS.View.Components.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		C460A50122878A00009B5362 /* Figure.Serializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Figure.Serializable.swift; sourceTree = "<group>"; };
 		C460A503228791BF009B5362 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C460A50522879914009B5362 /* Render.ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Render.ViewController.swift; sourceTree = "<group>"; };
+		C460A5082287AE83009B5362 /* iOS.View.Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS.View.Components.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 			children = (
 				C460A4D72287851C009B5362 /* Info.plist */,
 				C460A4D62287851C009B5362 /* FigureiOS.h */,
+				C460A5072287AE75009B5362 /* Components */,
 				C460A4E822878663009B5362 /* Descriptor */,
 				C460A4E522878570009B5362 /* Renderer */,
 				C460A504228798FE009B5362 /* Views */,
@@ -288,6 +291,14 @@
 				C460A50522879914009B5362 /* Render.ViewController.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C460A5072287AE75009B5362 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C460A5082287AE83009B5362 /* iOS.View.Components.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -506,6 +517,7 @@
 			files = (
 				C460A4EA228788B4009B5362 /* iOS.Renderable.swift in Sources */,
 				C460A4E722878581009B5362 /* iOS.Renderer.swift in Sources */,
+				C460A5092287AE83009B5362 /* iOS.View.Components.swift in Sources */,
 				C460A4EC2287893E009B5362 /* iOS.Descriptor.swift in Sources */,
 				C460A50622879914009B5362 /* Render.ViewController.swift in Sources */,
 			);

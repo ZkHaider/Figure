@@ -44,3 +44,7 @@ extension ViewController {
     }
 }
 
+final class CustomView: UIView {
+    
+    
+}
