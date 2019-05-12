@@ -46,4 +46,38 @@ final class ViewController: UIViewController {
 }
 ```
 
-Notice we declaratively create the view in `rootView` and then render it by calling `render()` in `loadView()`.
+Notice we declaratively create the view in `rootView` and then render it by calling `render()` in `loadView()`. Alternatively you can subclass your `UIViewController` with `RenderViewController` and override the `rootView` property. `RenderViewController` handles your view rendering automatically, so even less boilerplate to write. 
+
+```swift 
+import FigureiOS
+
+final class ViewController: RenderViewController {
+
+    // MARK: - View 
+
+    override var rootView: iOSRenderer {
+        return .view(config: [],
+                     layout: [])
+    }
+    
+}
+```
+Declare view hierarchies like so:
+
+```swift 
+let myNestedView: iOSRenderer = .view(
+    config: [],
+    layout: [.fill],
+    .view(
+        config: [],
+        layout: [.set(width: 100.0, height: 100.0)],
+        .view(config: [], layout: []),
+        .view(config: [], layout: []),
+        .view(layout: [], config: [])
+    )
+)
+
+let view: UIView = myNestedView.render()
+```
+
+The above will create a root view with 1 subviews which itself should have 3 subviews.
