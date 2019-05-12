@@ -21,7 +21,7 @@ Add `github "ZkHaider/Figure" "master"` to your Cartfile, and run Carthage.
 A view is declared simply by:
 
 ```swift 
-let view: iOSRenderer = .view(config: [], layout: [])
+let view: iOSRenderer = .view()
 ```
 
 You can then render that view like so:
