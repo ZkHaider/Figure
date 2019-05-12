@@ -109,10 +109,6 @@ let json: String = view.describe.json
 
 Notice I am importing a new module `FigureSerializable`.
 
-## Archiecture
-
-<img src="https://raw.githubusercontent.com/ZkHaider/Figure/tree/master/Resources/figure_architecture.png" />
-
 ## Contributions
 
 `Figure` welcomes both fixes, improvements, and feature additions. If you'd like to contribute, open a pull request with a detailed description of your changes. 
