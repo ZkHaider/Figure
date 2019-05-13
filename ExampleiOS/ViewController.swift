@@ -46,7 +46,24 @@ class ViewController: RenderViewController {
         guard
             let viewJSON = self.rootView.describe.json
             else { return }
-        print(viewJSON)
+        
+        print("""
+        🔎 Converted JSON:
+        \(viewJSON)\n
+        """)
+        
+        // Revert back to Renderer
+        guard
+            let data = viewJSON.data(using: .utf8),
+            let renderer = try? JSONDecoder().decode(iOSRenderer.self, from: data)
+            else { return }
+       
+        print("""
+        🔮 Converted Renderer:
+        \(renderer)
+        """)
+        let revertedView = renderer.describe.view
+        print(revertedView)
     }
 
 
