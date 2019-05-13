@@ -173,14 +173,26 @@ extension iOSRenderer: Codable {
             self.children = []
         }
 
-        //        let render: Render = { () -> UIView in
-        //            let view = UIView(frame: .zero)
-        //            view.applyConfig(config)
-        //            children.compactMap({ $0.render() })
-        //                .forEach(view.addSubview)
-        //            return view
-        //        }
-        self.render = { () -> UIView in return UIView(frame: .zero) }
+        let viewType = self.viewType
+        let config = self.config
+        let children = self.children
+        
+        self.render = { () -> UIView in
+            switch viewType {
+            case .view:
+                let view = UIView(frame: .zero)
+                view.applyConfig(config)
+                children.compactMap({ $0.render() })
+                    .forEach(view.addSubview)
+                return view
+            case .custom(let type):
+                let view = type.init(frame: .zero)
+                view.applyConfig(config)
+                children.compactMap({ $0.render() })
+                    .forEach(view.addSubview)
+                return view
+            }
+        }
     }
 
     public func encode(to encoder: Encoder) throws {

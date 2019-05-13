@@ -79,7 +79,7 @@ extension iOSRenderer: iOSViewComponents {
 }
 
 extension UIView {
-    fileprivate func applyConfig(_ configs: [ViewConfig]) {
+    func applyConfig(_ configs: [ViewConfig]) {
         for config in configs {
             switch config {
             case .backgroundColor(let color):
