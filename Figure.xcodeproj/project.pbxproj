@@ -39,6 +39,7 @@
 		C46C5D63229D37AF000FEED7 /* FigureForm.h in Headers */ = {isa = PBXBuildFile; fileRef = C46C5D61229D37AF000FEED7 /* FigureForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C46C5D66229D37AF000FEED7 /* FigureForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46C5D5F229D37AF000FEED7 /* FigureForm.framework */; };
 		C46C5D67229D37AF000FEED7 /* FigureForm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C46C5D5F229D37AF000FEED7 /* FigureForm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C46C5D75229D3917000FEED7 /* Form.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46C5D74229D3904000FEED7 /* Form.framework */; };
 		C4B61F4C2288DFAA00AD3A79 /* view.json in Resources */ = {isa = PBXBuildFile; fileRef = C4B61F4B2288DFAA00AD3A79 /* view.json */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = C46C5D5E229D37AF000FEED7;
 			remoteInfo = FigureForm;
+		};
+		C46C5D71229D3904000FEED7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C46C5D6C229D3903000FEED7 /* Form.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C46C5D43229D2AFF000FEED7;
+			remoteInfo = Example;
+		};
+		C46C5D73229D3904000FEED7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C46C5D6C229D3903000FEED7 /* Form.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C46C5CC52297A613000FEED7;
+			remoteInfo = Form;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -132,6 +147,7 @@
 		C46C5D5F229D37AF000FEED7 /* FigureForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FigureForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C46C5D61229D37AF000FEED7 /* FigureForm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FigureForm.h; sourceTree = "<group>"; };
 		C46C5D62229D37AF000FEED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C46C5D6C229D3903000FEED7 /* Form.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Form.xcodeproj; path = Carthage/Checkouts/Form/Form.xcodeproj; sourceTree = SOURCE_ROOT; };
 		C4B61F4B2288DFAA00AD3A79 /* view.json */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = text.json; path = view.json; sourceTree = "<group>"; tabWidth = 4; };
 /* End PBXFileReference section */
 
@@ -173,6 +189,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C46C5D75229D3917000FEED7 /* Form.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +199,7 @@
 		C460A49222878326009B5362 = {
 			isa = PBXGroup;
 			children = (
+				C46C5D6B229D38F3000FEED7 /* Dependencies */,
 				C460A503228791BF009B5362 /* README.md */,
 				C460A4AC2287833D009B5362 /* ExampleiOS */,
 				C460A49E22878326009B5362 /* Figure */,
@@ -365,6 +383,23 @@
 			path = FigureForm;
 			sourceTree = "<group>";
 		};
+		C46C5D6B229D38F3000FEED7 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				C46C5D6C229D3903000FEED7 /* Form.xcodeproj */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		C46C5D6D229D3903000FEED7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C46C5D72229D3904000FEED7 /* Example.app */,
+				C46C5D74229D3904000FEED7 /* Form.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -539,6 +574,12 @@
 			mainGroup = C460A49222878326009B5362;
 			productRefGroup = C460A49D22878326009B5362 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C46C5D6D229D3903000FEED7 /* Products */;
+					ProjectRef = C46C5D6C229D3903000FEED7 /* Form.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C460A4AA2287833D009B5362 /* ExampleiOS */,
@@ -549,6 +590,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C46C5D72229D3904000FEED7 /* Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Example.app;
+			remoteRef = C46C5D71229D3904000FEED7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C46C5D74229D3904000FEED7 /* Form.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Form.framework;
+			remoteRef = C46C5D73229D3904000FEED7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C460A49A22878326009B5362 /* Resources */ = {
