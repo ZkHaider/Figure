@@ -32,11 +32,14 @@
 		C460A50222878A00009B5362 /* Figure.Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A50122878A00009B5362 /* Figure.Serializable.swift */; };
 		C460A50622879914009B5362 /* Render.ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A50522879914009B5362 /* Render.ViewController.swift */; };
 		C460A5092287AE83009B5362 /* iOS.View.Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A5082287AE83009B5362 /* iOS.View.Components.swift */; };
-		C4B61F4C2288DFAA00AD3A79 /* view.json in Resources */ = {isa = PBXBuildFile; fileRef = C4B61F4B2288DFAA00AD3A79 /* view.json */; };
 		C460A5132288B5E4009B5362 /* View.Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A5122288B5E4009B5362 /* View.Types.swift */; };
 		C460A5152288D169009B5362 /* iOS.Renderer.Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A5142288D169009B5362 /* iOS.Renderer.Codable.swift */; };
 		C460A5192288D6E0009B5362 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A5172288D697009B5362 /* Color.swift */; };
 		C460A51C2288D768009B5362 /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460A51B2288D768009B5362 /* Aliases.swift */; };
+		C46C5D63229D37AF000FEED7 /* FigureForm.h in Headers */ = {isa = PBXBuildFile; fileRef = C46C5D61229D37AF000FEED7 /* FigureForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C46C5D66229D37AF000FEED7 /* FigureForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46C5D5F229D37AF000FEED7 /* FigureForm.framework */; };
+		C46C5D67229D37AF000FEED7 /* FigureForm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C46C5D5F229D37AF000FEED7 /* FigureForm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C4B61F4C2288DFAA00AD3A79 /* view.json in Resources */ = {isa = PBXBuildFile; fileRef = C4B61F4B2288DFAA00AD3A79 /* view.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,13 @@
 			remoteGlobalIDString = C460A49B22878326009B5362;
 			remoteInfo = Figure;
 		};
+		C46C5D64229D37AF000FEED7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C460A49322878326009B5362 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C46C5D5E229D37AF000FEED7;
+			remoteInfo = FigureForm;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -79,6 +89,7 @@
 			files = (
 				C460A4DC2287851C009B5362 /* FigureiOS.framework in Embed Frameworks */,
 				C460A4FA228789B1009B5362 /* FigureSerializable.framework in Embed Frameworks */,
+				C46C5D67229D37AF000FEED7 /* FigureForm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,11 +125,14 @@
 		C460A503228791BF009B5362 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C460A50522879914009B5362 /* Render.ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Render.ViewController.swift; sourceTree = "<group>"; };
 		C460A5082287AE83009B5362 /* iOS.View.Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS.View.Components.swift; sourceTree = "<group>"; };
-		C4B61F4B2288DFAA00AD3A79 /* view.json */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = text.json; path = view.json; sourceTree = "<group>"; tabWidth = 4; };
 		C460A5122288B5E4009B5362 /* View.Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.Types.swift; sourceTree = "<group>"; };
 		C460A5142288D169009B5362 /* iOS.Renderer.Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS.Renderer.Codable.swift; sourceTree = "<group>"; };
 		C460A5172288D697009B5362 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		C460A51B2288D768009B5362 /* Aliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aliases.swift; sourceTree = "<group>"; };
+		C46C5D5F229D37AF000FEED7 /* FigureForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FigureForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C46C5D61229D37AF000FEED7 /* FigureForm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FigureForm.h; sourceTree = "<group>"; };
+		C46C5D62229D37AF000FEED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4B61F4B2288DFAA00AD3A79 /* view.json */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = text.json; path = view.json; sourceTree = "<group>"; tabWidth = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +149,7 @@
 			files = (
 				C460A4DB2287851C009B5362 /* FigureiOS.framework in Frameworks */,
 				C460A4F9228789B1009B5362 /* FigureSerializable.framework in Frameworks */,
+				C46C5D66229D37AF000FEED7 /* FigureForm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +169,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C46C5D5C229D37AF000FEED7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -165,6 +187,7 @@
 				C460A49E22878326009B5362 /* Figure */,
 				C460A4D52287851C009B5362 /* FigureiOS */,
 				C460A4F3228789B1009B5362 /* FigureSerializable */,
+				C46C5D60229D37AF000FEED7 /* FigureForm */,
 				C460A49D22878326009B5362 /* Products */,
 				C460A4E12287855B009B5362 /* Frameworks */,
 			);
@@ -177,6 +200,7 @@
 				C460A4AB2287833D009B5362 /* ExampleiOS.app */,
 				C460A4D42287851C009B5362 /* FigureiOS.framework */,
 				C460A4F2228789B1009B5362 /* FigureSerializable.framework */,
+				C46C5D5F229D37AF000FEED7 /* FigureForm.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -332,6 +356,15 @@
 			path = CrossPlatform;
 			sourceTree = "<group>";
 		};
+		C46C5D60229D37AF000FEED7 /* FigureForm */ = {
+			isa = PBXGroup;
+			children = (
+				C46C5D61229D37AF000FEED7 /* FigureForm.h */,
+				C46C5D62229D37AF000FEED7 /* Info.plist */,
+			);
+			path = FigureForm;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -356,6 +389,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C460A4F6228789B1009B5362 /* FigureSerializable.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C46C5D5A229D37AF000FEED7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46C5D63229D37AF000FEED7 /* FigureForm.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +435,7 @@
 			dependencies = (
 				C460A4DA2287851C009B5362 /* PBXTargetDependency */,
 				C460A4F8228789B1009B5362 /* PBXTargetDependency */,
+				C46C5D65229D37AF000FEED7 /* PBXTargetDependency */,
 			);
 			name = ExampleiOS;
 			productName = ExampleiOS;
@@ -438,6 +480,24 @@
 			productReference = C460A4F2228789B1009B5362 /* FigureSerializable.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		C46C5D5E229D37AF000FEED7 /* FigureForm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C46C5D6A229D37AF000FEED7 /* Build configuration list for PBXNativeTarget "FigureForm" */;
+			buildPhases = (
+				C46C5D5A229D37AF000FEED7 /* Headers */,
+				C46C5D5B229D37AF000FEED7 /* Sources */,
+				C46C5D5C229D37AF000FEED7 /* Frameworks */,
+				C46C5D5D229D37AF000FEED7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FigureForm;
+			productName = FigureForm;
+			productReference = C46C5D5F229D37AF000FEED7 /* FigureForm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -463,6 +523,9 @@
 						CreatedOnToolsVersion = 10.2.1;
 						LastSwiftMigration = 1020;
 					};
+					C46C5D5E229D37AF000FEED7 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 				};
 			};
 			buildConfigurationList = C460A49622878326009B5362 /* Build configuration list for PBXProject "Figure" */;
@@ -482,6 +545,7 @@
 				C460A49B22878326009B5362 /* Figure */,
 				C460A4D32287851C009B5362 /* FigureiOS */,
 				C460A4F1228789B1009B5362 /* FigureSerializable */,
+				C46C5D5E229D37AF000FEED7 /* FigureForm */,
 			);
 		};
 /* End PBXProject section */
@@ -512,6 +576,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C460A4F0228789B1009B5362 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C46C5D5D229D37AF000FEED7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -567,6 +638,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C46C5D5B229D37AF000FEED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -589,6 +667,11 @@
 			isa = PBXTargetDependency;
 			target = C460A49B22878326009B5362 /* Figure */;
 			targetProxy = C460A4FF228789ED009B5362 /* PBXContainerItemProxy */;
+		};
+		C46C5D65229D37AF000FEED7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C46C5D5E229D37AF000FEED7 /* FigureForm */;
+			targetProxy = C46C5D64229D37AF000FEED7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -905,6 +988,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.figure.FigureSerializable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -936,6 +1020,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.figure.FigureSerializable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -944,6 +1029,64 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 arm64e armv7 armv7s i386 x86_64";
+			};
+			name = Release;
+		};
+		C46C5D68229D37AF000FEED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EVL2DEPTTR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FigureForm/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flow.FigureForm;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64 i386";
+			};
+			name = Debug;
+		};
+		C46C5D69229D37AF000FEED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EVL2DEPTTR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FigureForm/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flow.FigureForm;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64 i386";
 			};
 			name = Release;
 		};
@@ -991,6 +1134,15 @@
 			buildConfigurations = (
 				C460A4FC228789B1009B5362 /* Debug */,
 				C460A4FD228789B1009B5362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C46C5D6A229D37AF000FEED7 /* Build configuration list for PBXNativeTarget "FigureForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C46C5D68229D37AF000FEED7 /* Debug */,
+				C46C5D69229D37AF000FEED7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
