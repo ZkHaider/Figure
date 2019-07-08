@@ -9,9 +9,12 @@
 import Foundation
 import Figure
 
-public protocol iOSViewComponents: ViewComponent {
-    static func view(of type: UIView.Type,
-                     config: [ViewConfig],
-                     layout: [LayoutConfig],
-                     _ children: Self...) -> Self
+public protocol iOSViewComponents: ViewComponents {
+    static func customView(of type: UIView.Type,
+                           name: String,
+                           interactionEnabled: Bool,
+                           hidden: Bool,
+                           style: StyleBuilder,
+                           layout: LayoutBuilder,
+                           _ children: Self...) -> Self
 }

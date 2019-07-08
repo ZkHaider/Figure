@@ -1,0 +1,6 @@
+[submodule "Carthage/Checkouts/Form"]
+	path = Carthage/Checkouts/Form
+	url = https://github.com/ZkHaider/Form.git
+[submodule "Carthage/Checkouts/ParsingKit"]
+	path = Carthage/Checkouts/ParsingKit
+	url = https://github.com/ZkHaider/ParsingKit.git

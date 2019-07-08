@@ -14,7 +14,8 @@ extension iOSRenderer: DescriptorCompatible {}
 extension ViewDescriptor: Renderable where Component == iOSRenderer {
     
     public var view: UIView {
-        return self.base.render()
+        let viewDescription = self.base.descriptor
+        return self.base.renderer.render(viewDescription)
     }
     
 }

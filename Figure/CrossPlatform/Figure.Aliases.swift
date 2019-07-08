@@ -9,5 +9,9 @@
 import Foundation
 
 #if os(OSX)
+import AppKit
 public typealias UIColor = NSColor
+public typealias UIView = NSView
+public typealias UIFont = NSFont
+#elseif os(iOS)
 #endif

@@ -15,17 +15,16 @@ class ViewController: RenderViewController {
     // MARK: - View
     
     override var rootView: iOSRenderer {
-        return .view(
+        return .customView(
             of: MyCustomView.self,
             .view(
-                layout: [
-                    .fill,
-                    .frame(origin: .zero, size: .zero)
-                ],
+                layout: .layout(),
                 .view(),
-                .view(
+                .customView(
                     of: MyCustomView.self,
-                    config: [.backgroundColor(.red)]
+                    style: .style(
+                        backgroundColor: .red
+                    )
                 )
             )
         )
@@ -37,33 +36,40 @@ class ViewController: RenderViewController {
         super.init()
     }
     
-    // MARK: - Lifecycle 
+    // MARK: - Lifecycle
+    
+    override func loadView() {
+        let view = self.rootView.describe.view
+        self.view = view
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         // Transform to JSON
-        guard
-            let viewJSON = self.rootView.describe.json
-            else { return }
-        
-        print("""
-        🔎 Converted JSON:
-        \(viewJSON)\n
-        """)
-        
-        // Revert back to Renderer
-        guard
-            let data = viewJSON.data(using: .utf8),
-            let renderer = try? JSONDecoder().decode(iOSRenderer.self, from: data)
-            else { return }
-       
-        print("""
-        🔮 Converted Renderer:
-        \(renderer)
-        """)
-        let revertedView = renderer.describe.view
-        print(revertedView)
+//        guard
+//            let viewJSON = self.rootView.describe.json
+//            else { return }
+//
+//        print("""
+//        🔎 Converted JSON:
+//        \(viewJSON)\n
+//        """)
+//
+//        // Revert back to Renderer
+//        guard
+//            let data = viewJSON.data(using: .utf8),
+//            let renderer = try? JSONDecoder().decode(iOSRenderer.self, from: data)
+//            else { return }
+//
+//        print("""
+//        🔮 Converted Renderer:
+//        \(renderer)
+//        """)
+//        let revertedView = renderer.describe.view
+//        print(revertedView)
     }
 
 

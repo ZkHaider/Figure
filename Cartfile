@@ -1,2 +1,5 @@
 # Layout Engine
 github "ZkHaider/Form" "master"
+
+# Parsing
+github "ZkHaider/ParsingKit" "master"
